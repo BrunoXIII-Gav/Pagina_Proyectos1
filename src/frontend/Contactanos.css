@@ -1,0 +1,112 @@
+/* Estilos Generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #a3d5f7, #73bdf1);
+  }
+  
+  /* Contenedor de Contacto */
+  .contacto-contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Alineación hacia la izquierda */
+    width: 100vw; /* Ocupa todo el ancho de la pantalla */
+    padding: 0px;
+    height: 90vh;
+    gap: 50px; /* Espacio entre la tarjeta y la imagen */
+    position: relative;
+  }
+  
+  /* Tarjeta de Contacto */
+  .contacto-tarjeta {
+    background-color: #ffffff;
+    
+    border-radius: 10px;
+    padding: 35px;
+    padding-top: 0%;
+    max-width: 450px;
+    height: 88%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1;
+    margin-left: 20px; /* Mueve la tarjeta más a la izquierda */
+  }
+  
+  .contacto-tarjeta h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #333333;
+  }
+  
+  .contacto-tarjeta p {
+    font-size: 1.1em;
+    color: #666666;
+    margin-bottom: 10px;
+  }
+  
+  /* Formulario de Contacto */
+  .contacto-formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contacto-formulario label {
+    font-size: 1em;
+    color: #333333;
+  }
+  
+  .contacto-formulario input,
+  .contacto-formulario textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #cccccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1em;
+  }
+  
+  .contacto-formulario input::placeholder,
+  .contacto-formulario textarea::placeholder {
+    color: #999999;
+  }
+  
+  .contacto-formulario textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .contacto-formulario button {
+    padding: 12px;
+    font-size: 1.1em;
+    color: #ffffff;
+    background-color: #007acc;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .contacto-formulario button:hover {
+    background-color: #005f99;
+  }
+  
+  .contacto-formulario button:active {
+    background-color: #004d80;
+  }
+  
+  /* Imagen de Fondo en la Parte Derecha */
+  .contacto-contenedor::before {
+    content: "";
+    background: url('https://www.linkaform.com/hubfs/linkaform-2021/img-contactanos.png') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%; /* Ocupa la mitad derecha */
+    height: 100%;
+    z-index: 0;
+    border-top-left-radius: 10px;
+  }
+  

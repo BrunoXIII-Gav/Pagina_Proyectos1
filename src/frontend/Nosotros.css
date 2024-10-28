@@ -1,0 +1,110 @@
+/* Fondo y estilos generales */
+body {
+    background-color: #f5f3f0; /* Fondo café claro */
+    color: #4b3832; /* Café oscuro */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nosotros {
+    padding: 40px 20px;
+  }
+  
+  .nosotros-header {
+    background-color: #eae4dc; /* Fondo para el encabezado */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .nosotros-header h1 {
+    font-size: 36px;
+    color: #3d2c2a;
+    margin: 0;
+    font-weight: 700;
+  }
+  
+  .nosotros-descripcion {
+    font-size: 18px;
+    color: #4b3832;
+    margin-top: 10px;
+    max-width: 600px;
+    margin: 10px auto;
+    line-height: 1.6;
+  }
+  
+  .nosotros-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  /* Estilos para las tarjetas */
+  .tarjeta {
+    background-color: #ffffff; /* Fondo blanco */
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido horizontalmente */
+    justify-content: center;
+  }
+  
+  /* Contenedor de la imagen */
+  .tarjeta-imagen-container {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    border: 3px solid #d5a379; /* Borde café claro */
+  }
+  
+  /* Imagen de la tarjeta */
+  .tarjeta-imagen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen al contenedor */
+    display: block;
+  }
+  
+  /* Texto de la tarjeta */
+  .tarjeta-nombre {
+    font-size: 20px;
+    color: #3d2c2a;
+    margin-bottom: 6px;
+    font-weight: 700;
+  }
+  
+  .tarjeta-rol {
+    font-size: 14px;
+    color: #7d5a50; /* Café intermedio */
+    margin-bottom: 12px;
+    font-style: italic;
+  }
+  
+  .tarjeta-descripcion {
+    font-size: 14px;
+    color: #4b3832;
+  }
+  
+  /* Estilos responsive */
+  @media (max-width: 768px) {
+    .nosotros-tarjetas {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

@@ -1,0 +1,71 @@
+/* Estilos generales para la página Servicios */
+.servicios-contenedor {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .servicios-contenedor h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333333;
+  }
+  
+  .servicios-contenedor p {
+    font-size: 1.1em;
+    color: #666666;
+    margin-bottom: 30px;
+  }
+  
+  /* Estilos para el formulario */
+  .servicios-formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .servicios-formulario label {
+    font-size: 1em;
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  .servicios-formulario input[type="date"] {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #cccccc;
+    width: 100%;
+    max-width: 250px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1em;
+  }
+  
+  /* Estilos para el botón de descarga */
+  .servicios-formulario button {
+    padding: 12px 20px;
+    font-size: 1.1em;
+    color: #ffffff;
+    background-color: #007acc;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+  }
+  
+  .servicios-formulario button:hover {
+    background-color: #005f99;
+  }
+  
+  .servicios-formulario button:active {
+    background-color: #004d80;
+  }
+  
