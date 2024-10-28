@@ -6,18 +6,36 @@ import './Nosotros.css';
 const Nosotros = () => {
   const integrantes = [
     {
-      nombre: 'Juan Pérez',
-      rol: 'Desarrollador Frontend',
-      imagen: '/imagenes/juan.png',
-      descripcion: 'Especialista en interfaces y experiencias de usuario.'
+      nombre: 'Camilo',
+      rol: 'Coordinador de IT',
+      imagen: '/imagenes/as.png',
+      descripcion: 'Encargado de la integracion de sensores.'
     },
     {
-      nombre: 'María García',
-      rol: 'Desarrolladora Backend',
-      imagen: 'https://images.wikidexcdn.net/mwuploads/esssbwiki/c/cb/latest/20220530212008/Mario_Mario_Party_Superstars.png',
-      descripcion: 'Encargada de la arquitectura del servidor y las APIs.'
+      nombre: 'Bruno',
+      rol: 'Desarrollador de Software',
+      imagen: '/imagenes/as.png',
+      descripcion: 'Encardago del desarrollo del softaware .'
     },
-    // Añade más integrantes aquí
+    {
+      nombre: 'Jhunior',
+      rol: 'Coordinador de Hardware',
+      imagen: '/imagenes/as.png',
+      descripcion: 'Encargado de la implementacion del hardwar.'
+    },
+    {
+      nombre: 'Stephany',
+      rol: 'Coordinadora de Modelado 3D',
+      imagen: '/imagenes/as.png',
+      descripcion: 'Encargada de la creacion de modelos 3D.'
+    },
+    {
+      nombre: 'Jose',
+      rol: 'Coordinador de desarrollo Web',
+      imagen: '/imagenes/as.png',
+      descripcion: 'Encargado de la cracion de la pagina web y el backend.'
+    },
+
   ];
 
   return (
