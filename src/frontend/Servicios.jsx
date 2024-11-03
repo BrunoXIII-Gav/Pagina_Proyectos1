@@ -1,4 +1,4 @@
-// Servicios.jsx
+// src/components/Servicios.jsx
 import React, { useState } from 'react';
 import './Servicios.css';
 
@@ -7,7 +7,31 @@ const Servicios = () => {
   const [endDate, setEndDate] = useState('');
 
   const handleDownload = () => {
-    alert(`Se descargará la información del ${startDate} al ${endDate} en formato CSV.`);
+    if (!startDate || !endDate) {
+      alert('Por favor, selecciona ambos intervalos de fecha.');
+      return;
+    }
+
+    // Llamada a la API en el backend
+    fetch(`http://localhost:5000/api/download-csv?startDate=${startDate}&endDate=${endDate}`)
+      .then((response) => {
+        if (response.ok) {
+          return response.blob();
+        }
+        throw new Error('Error en la descarga');
+      })
+      .then((blob) => {
+        // Crear un enlace de descarga
+        const url = window.URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = 'MedidasSensores.csv';
+        link.click();
+        window.URL.revokeObjectURL(url);
+      })
+      .catch((error) => {
+        console.error('Error al descargar el archivo CSV:', error);
+      });
   };
 
   return (
